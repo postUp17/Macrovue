@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import DropdownItem from "./DropdownItem";
+import Aux from "../../hoc/Aux";
 
 class FilterItem extends Component {
   render() {
     return (
-      <div className="dropdown d-none d-lg-block col-sm-3 ">
+      <Aux>
         <a
           className="btn btn-outline-success dropdown-toggle"
           href="#!"
@@ -18,7 +19,7 @@ class FilterItem extends Component {
           {this.props.data.text}
         </a>
         <div
-          className="dropdown-menu"
+          className="dropdown-menu "
           style={{ width: "94%" }}
           aria-labelledby="dropdownMenuLink"
         >
@@ -26,7 +27,7 @@ class FilterItem extends Component {
             <DropdownItem key={item} item={item} />
           ))}
         </div>
-      </div>
+      </Aux>
     );
   }
 }

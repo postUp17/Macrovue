@@ -61,7 +61,7 @@ class Navbar extends Component {
                   My Account
                 </a>
                 <div
-                  className="dropdown-menu"
+                  className="dropdown-menu "
                   aria-labelledby="navbarDropdownMenuLink"
                 >
                   <button className="btn btn-primary" style={{ width: "100%" }}>

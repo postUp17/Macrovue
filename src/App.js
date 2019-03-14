@@ -6,6 +6,7 @@ import RegionBar from "./components/regionBar/RegionBar";
 import FilterBar from "./components/filterBar/filterBar";
 import ActivityTable from "./components/activityTable/ActivityTable";
 import Pagination from "./components/pagination/Pagination";
+import ExportSummary from "./components/exportSummary/ExportSummary";
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
         <FilterBar />
         <ActivityTable />
         <Pagination />
+        <ExportSummary />
       </div>
     );
   }

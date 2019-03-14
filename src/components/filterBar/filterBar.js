@@ -181,16 +181,23 @@ class filterBar extends Component {
                 ))}
               </div>
             </div> */}
-
-            <FilterItem data={this.state.dateContent} />
-            <FilterItem data={this.state.numberContent} />
-            <FilterItem data={this.state.typeContent} />
+            <div className="dropdown d-none d-lg-block col-sm-3 ">
+              <FilterItem data={this.state.dateContent} />
+            </div>
+            <div className="dropdown d-none d-lg-block col-sm-3 ">
+              <FilterItem data={this.state.numberContent} />
+            </div>
+            <div className="dropdown d-none d-lg-block col-sm-3 ">
+              <FilterItem data={this.state.typeContent} />
+            </div>
 
             <div className="col-sm-3 ">
               <button
                 type="button"
                 className="btn btn-outline-primary"
                 style={{ width: "100%" }}
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
               >
                 <i className="fas fa-file-export" />
                 Export
@@ -235,6 +242,8 @@ class filterBar extends Component {
               <button
                 type="button"
                 className="btn btn-primary "
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
                 style={{ width: "100%" }}
               >
                 <i className="fas fa-file-export" />
