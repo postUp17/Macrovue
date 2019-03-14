@@ -3,95 +3,97 @@ import TableBody from "./TableBody";
 import Aux from "../../hoc/Aux";
 
 class ActivityTable extends Component {
-  state = [
-    {
-      date: "2019-02-19",
-      type: "Stock Trade Commission",
-      action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
-      amount: -12.91,
-      ending_cash_AUD: 667746.18
-    },
-    {
-      date: "2019-02-18",
-      type: "Stock Trade Commission",
-      action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
-      amount: -12.91,
-      ending_cash_AUD: 667746.18
-    },
-    {
-      date: "2019-02-17",
-      type: "Stock Trade Commission",
-      action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
-      amount: -12.91,
-      ending_cash_AUD: 667746.18
-    },
-    {
-      date: "2019-02-16",
-      type: "Stock Trade Commission",
-      action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
-      amount: -12.91,
-      ending_cash_AUD: 667746.18
-    },
-    {
-      date: "2019-02-15",
-      type: "Stock Trade Commission",
-      action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
-      amount: -12.91,
-      ending_cash_AUD: 667746.18
-    },
-    {
-      date: "2019-02-14",
-      type: "Stock Trade Commission",
-      action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
-      amount: -12.91,
-      ending_cash_AUD: 667746.18
-    },
-    {
-      date: "2019-02-13",
-      type: "Stock Trade Commission",
-      action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
-      amount: -12.91,
-      ending_cash_AUD: 667746.18
-    },
-    {
-      date: "2019-02-12",
-      type: "Stock Trade Commission",
-      action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
-      amount: -12.91,
-      ending_cash_AUD: 667746.18
-    },
-    {
-      date: "2019-02-11",
-      type: "Stock Trade Commission",
-      action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
-      amount: -12.91,
-      ending_cash_AUD: 667746.18
-    },
-    {
-      date: "2019-02-10",
-      type: "Stock Trade Commission",
-      action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
-      amount: -12.91,
-      ending_cash_AUD: 667746.18
-    },
-    {
-      date: "2019-02-9",
-      type: "Stock Trade Commission",
-      action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
-      amount: -12.91,
-      ending_cash_AUD: 667746.18
-    },
-    {
-      date: "2019-02-8",
-      type: "Stock Trade Commission",
-      action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
-      amount: -12.91,
-      ending_cash_AUD: 667746.18
-    }
-  ];
+  state = {
+    data: [
+      {
+        date: "2019-02-19",
+        type: "Stock Trade Commission",
+        action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
+        amount: -12.91,
+        ending_cash_AUD: 667746.18
+      },
+      {
+        date: "2019-02-18",
+        type: "Stock Trade Commission",
+        action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
+        amount: -12.91,
+        ending_cash_AUD: 667746.18
+      },
+      {
+        date: "2019-02-17",
+        type: "Stock Trade Commission",
+        action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
+        amount: -12.91,
+        ending_cash_AUD: 667746.18
+      },
+      {
+        date: "2019-02-16",
+        type: "Stock Trade Commission",
+        action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
+        amount: -12.91,
+        ending_cash_AUD: 667746.18
+      },
+      {
+        date: "2019-02-15",
+        type: "Stock Trade Commission",
+        action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
+        amount: -12.91,
+        ending_cash_AUD: 667746.18
+      },
+      {
+        date: "2019-02-14",
+        type: "Stock Trade Commission",
+        action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
+        amount: -12.91,
+        ending_cash_AUD: 667746.18
+      },
+      {
+        date: "2019-02-13",
+        type: "Stock Trade Commission",
+        action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
+        amount: -12.91,
+        ending_cash_AUD: 667746.18
+      },
+      {
+        date: "2019-02-12",
+        type: "Stock Trade Commission",
+        action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
+        amount: -12.91,
+        ending_cash_AUD: 667746.18
+      },
+      {
+        date: "2019-02-11",
+        type: "Stock Trade Commission",
+        action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
+        amount: -12.91,
+        ending_cash_AUD: 667746.18
+      },
+      {
+        date: "2019-02-10",
+        type: "Stock Trade Commission",
+        action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
+        amount: -12.91,
+        ending_cash_AUD: 667746.18
+      },
+      {
+        date: "2019-02-9",
+        type: "Stock Trade Commission",
+        action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
+        amount: -12.91,
+        ending_cash_AUD: 667746.18
+      },
+      {
+        date: "2019-02-8",
+        type: "Stock Trade Commission",
+        action: "Commission for Stock Trade Microsoft Corporation[MSFT] NASDAQ",
+        amount: -12.91,
+        ending_cash_AUD: 667746.18
+      }
+    ]
+  };
 
   render() {
-    let body = this.state;
+    let body = this.state.data;
 
     return (
       <Aux>
@@ -110,7 +112,7 @@ class ActivityTable extends Component {
               </tr>
             </thead>
             <tbody>
-              <TableBody data={this.state} />
+              <TableBody data={this.state.data} />
             </tbody>
           </table>
         </div>

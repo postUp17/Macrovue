@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Logo from "../../img/Logo.jpg";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   render() {
@@ -74,12 +75,12 @@ class Navbar extends Component {
                   <a className="dropdown-item" href="#!">
                     Performance
                   </a>
-                  <a className="dropdown-item" href="#!">
+                  <Link to="/order" className="dropdown-item">
                     Place order
-                  </a>
-                  <a className="dropdown-item" href="#!">
+                  </Link>
+                  <Link to="/activity" className="dropdown-item">
                     Activity
-                  </a>
+                  </Link>
                   <a className="dropdown-item" href="#!">
                     Statements
                   </a>

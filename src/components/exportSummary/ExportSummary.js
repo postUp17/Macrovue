@@ -59,12 +59,12 @@ class ExportSummary extends Component {
         <div
           className="modal fade"
           id="exampleModalCenter"
-          tabindex="-1"
+          tabIndex="-1"
           role="dialog"
           aria-labelledby="exampleModalCenterTitle"
           aria-hidden="true"
         >
-          <div className="modal-dialog modal-dialog-centered" role="document">
+          <div className="modal-dialog modal-dialog-centered " role="document">
             <div className="modal-content">
               <div className="modal-header ">
                 <h5 className="modal-title" id="exampleModalLongTitle">
@@ -84,7 +84,7 @@ class ExportSummary extends Component {
                 <form>
                   <div className="form-group row">
                     <label
-                      for="inputPassword"
+                      forhtml="inputPassword"
                       className="col-sm-4 col-form-label"
                     >
                       Select Currency
@@ -96,7 +96,7 @@ class ExportSummary extends Component {
 
                   <div className="form-group row">
                     <label
-                      for="inputPassword"
+                      forhtml="inputPassword"
                       className="col-sm-4 col-form-label"
                     >
                       Select Type
@@ -108,7 +108,7 @@ class ExportSummary extends Component {
 
                   <div className="form-group row">
                     <label
-                      for="dropdownMenuButton"
+                      forhtml="dropdownMenuButton"
                       className="col-sm-4 col-form-label"
                     >
                       Date Range
@@ -120,7 +120,7 @@ class ExportSummary extends Component {
 
                   <div className="form-group row">
                     <label
-                      for="inputPassword"
+                      forhtml="inputPassword"
                       className="col-sm-4 col-form-label"
                     >
                       Select Type
@@ -130,10 +130,16 @@ class ExportSummary extends Component {
                       role="group"
                       aria-label="Basic example"
                     >
-                      <button type="button" className="btn btn-outline-success">
+                      <button
+                        type="button"
+                        className="btn btn-outline-success mr-2"
+                      >
                         CSV
                       </button>
-                      <button type="button" className="btn btn-outline-success">
+                      <button
+                        type="button"
+                        className="btn btn-outline-success ml-2"
+                      >
                         XLS
                       </button>
                     </div>

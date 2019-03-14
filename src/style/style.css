@@ -13,3 +13,26 @@
   pointer-events: none;
   color: #aaa;
 }
+
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #dddddd;
+  border-right-width: 0px;
+  border-left-width: 0px;
+}
+
+.table1 {
+  border: 1px solid black;
+}
+
+#grad {
+  background-image: linear-gradient(
+    white,
+    rgba(7237, 252, 224, 0),
+    rgba(237, 252, 224, 1)
+  );
+}

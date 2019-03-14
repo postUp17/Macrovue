@@ -58,7 +58,7 @@ class RegionBar extends Component {
                 aria-expanded="false"
                 style={{ width: "100%" }}
               >
-                Exchange
+                Currency
               </a>
 
               <div
